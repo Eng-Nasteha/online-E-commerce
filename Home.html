@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Online Electronics</title>
+<style>
+   /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header / Nav */
+header {
+    background-color: #111214;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    margin-bottom: 5px;
+}
+
+.brand small {
+    font-size: 12px;
+    color: #dbeafe;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #ffffff33;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content .btn {
+    padding: 12px 25px;
+    background-color: #15e1e1;
+    color: #0d0d0e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #066d7f;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {opacity:0; transform: translateY(-20px);}
+    100% {opacity:1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+    0% {opacity:0; transform: translateY(20px);}
+    100% {opacity:1; transform: translateY(0);}
+}
+
+/* Sections */
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+section h2 {
+    color: #b4c3d8;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #0d6efd;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-weight: bold;
+    color: #333;
+}
+
+.card button {
+    padding: 8px 20px;
+    background-color: #137dae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #84ceec;
+}
+
+/* Footer */
+footer {
+    background-color: #0d9ebf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+ 
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="brand">
+            <h1>Online Electronics</h1>
+            <small>E-Commerce Website</small>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="shop.html">Shopping</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h2>Online Electronics E-Commerce Website</h2>
+        <p>Hab casri ah oo lagu dukaameysto qalabka electronics</p>
+        <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Featured Categories -->
+<section class="featured-categories">
+    <h2>Top Categories</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Mobile Phones">
+            <h3>Mobile Phones</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=200" alt="Laptop">
+            <h3>Gaming-laptop</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Headphones">
+            <h3>Headphones</h3>
+        
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>$350</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+            <h3>MacBook</h3>
+            <p>$850</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" >
+            <h3>Headphones</h3>
+            <p>$120</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=200" alt="TV">
+            <h3>Router</h3>
+            <p>$100</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>

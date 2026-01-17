@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Online Electronics</title>
+
+<style>
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:#f1f5f9;
+  color:#0f172a;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#020617;
+  padding:16px 0;
+}
+
+nav{
+  width:90%;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand h1{
+  color:#38bdf8;
+  font-size:26px;
+}
+
+.brand small{
+  color:#cbd5e1;
+  font-size:12px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:22px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav ul li a:hover{
+  color:#38bdf8;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title{
+  background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+  background-size:cover;
+  background-position:center;
+  height:45vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.page-title h2{
+  font-size:40px;
+}
+
+/* ===== PRODUCTS ===== */
+.container{
+  width:90%;
+  margin:70px auto;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.product{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 30px rgba(0,0,0,0.12);
+  text-align:center;
+  transition:0.3s;
+}
+
+.product:hover{
+  transform:translateY(-8px);
+}
+
+.product img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.product h3{
+  margin:15px 0 5px;
+}
+
+.product p{
+  color:#475569;
+}
+
+.price{
+  font-size:18px;
+  font-weight:bold;
+  color:#2563eb;
+}
+
+.product button{
+  margin:15px 0 25px;
+  padding:11px 22px;
+  background:#2563eb;
+  border:none;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.product button:hover{
+  background:#1e40af;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#020617;
+  color:#cbd5e1;
+  text-align:center;
+  padding:28px;
+  margin-top:70px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+  nav ul{
+    flex-direction:column;
+  }
+  .page-title h2{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <div class="brand">
+      <h1>Online Electronics</h1>
+      <small>E-Commerce Website</small>
+    </div>
+
+    <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="shop.html">Shopping</a></li>
+                <li><a href="#categories">categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#footer">Nala soo xiriir</a></li>
+            
+    </ul>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<section class="page-title">
+  <div>
+    <h2>Our Electronics Products</h2>
+    <p>Qalab casri ah oo tayo sare leh</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="container">
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f">
+      <h3>Smart Phone</h3>
+      <p class="price">$350</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <h3>MacBook Pro</h3>
+      <p class="price">$1,200</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+      <p class="price">$900</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?q=80&w=300&h=300&fit=crop" alt="Phones">
+      <h3>Laptop</h3>
+      <p class="price">$850</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+      <h3>Headphones</h3>
+      <p class="price">$120</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <h3>MacBook Pro</h3>
+      <p class="price">$1,200</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=300&h=300&fit=crop" alt="Laptops">
+      <h3>Smart Phone</h3>
+      <p class="price">$350</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+
+</body>
+</html>

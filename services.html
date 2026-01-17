@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electronics - Shop</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body { background-color: #f9f9f9; color: #333; }
+
+/* Navigation */
+nav {
+    background-color: #1a2a3a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; }
+.active { border-bottom: 2px solid white; }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1200');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Product Section */
+.container {
+    padding: 80px 10% 40px 10%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #1a2a3a;
+}
+
+/* Grid System */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+/* Circle Image Style */
+.image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-item p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Hover Effects */
+.product-item:hover { transform: translateY(-10px); }
+.product-item:hover .image-circle {
+    border-color: #3498db;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+}
+
+/* Footer */
+footer {
+    background: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Online Electronics</h1>
+                <p>E-Commerce Website</p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Shopping</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-section">
+            <div class="about-card">
+                <h2>About Our Platform</h2>
+                <p><strong>Online Electronics E-Commerce</strong> waa nidaam casri ah oo kuu sahlaya iibinta iyo iibsiga qalabka electronics si degdeg ah oo ammaan ah.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Qalabka aan Iibino (20 Products)</h2>
+        
+        <div class="product-grid">
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?w=200" alt="Washing Machine"></div>
+                <p>Automatic Washer</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=200" alt="Cooker"></div>
+                <p>Modern Gas Cooker</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=200" alt="Oven"></div>
+                <p>Electric Oven</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=200" alt="Fridge"></div>
+                <p>Smart Refrigerator</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=200" alt="Blender"></div>
+                <p>Kitchen Blender</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=200" alt="Microwave"></div>
+                <p>Digital Microwave</p>
+            </div>
+            
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=200" alt="Laptop"></div>
+                <p>Gaming Laptop</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=200" alt="TV"></div>
+                <p>Smart LED TV</p>
+            </div>
+            <div class="product-item">
+                <div class="image-circle"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200" alt="Headphones"></div>
+                <p>Wireless Headphones</p>
+            </div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200" alt="Watch"></div><p>Smart Watch</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200" alt="Phone"></div><p>Smartphone</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=200" alt="Camera"></div><p>Digital Camera</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1572721891396-a3b67d5f422d?w=200" alt="Speaker"></div><p>Bluetooth Speaker</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=200" alt="Camera"></div><p>DSLR Lens</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=200" alt="Tablet"></div><p>Graphic Tablet</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1585336139118-132f7070a311?w=200" alt="Toaster"></div><p>Bread Toaster</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1622708782596-12198631ad58?w=200" alt="AirFryer"></div><p>Air Fryer</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=200" alt="Processor"></div><p>Food Processor</p></div>
+            <div class="product-item"><div class="image-circle"><img src="https://images.unsplash.com/photo-1517336712672-4c64b6ffbd47?w=200" alt="Macbook"></div><p>Apple MacBook</p></div>
+        </div>
+    </main>
+
+    
+
+</body>
+</html>

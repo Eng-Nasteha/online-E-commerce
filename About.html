@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electronics - About</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1a2a3a; /* Midab madow u dhow buluug */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+/* Hero Section & Background */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=80'); /* Sawir tijaabo ah */
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* White Card (About Section) */
+.about-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: -50px; /* Waxay soo fadhisanaysaa badhka hoose */
+}
+
+.about-card h2 {
+    color: #1a2a3a;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-card p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 60px 0 20px 0; /* Boos dheeraad ah kor si kaarku ugu soo dhaco */
+    margin-top: 100px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Online Electronics</h1>
+                <p>E-Commerce Website</p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Shopping</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-section">
+            <div class="about-card">
+                <h2>About Our Platform</h2>
+                <p><strong>Online Electronics E-Commerce Website</strong> waa nidaam casri ah oo kuu sahlaya iibinta iyo iibsiga qalabka electronics si degdeg ah, ammaan ah, kana turjumaya baahida casriga.</p>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; 2026 Online Electronics E-Commerce Website</p>
+    </footer>
+
+</body>
+</html>
